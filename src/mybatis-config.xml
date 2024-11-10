@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"D:\add\org\apache\ibatis\builder\xml\mybatis-3-config.dtd">
+<configuration>
+
+
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+
+	<!-- 导入映射文件 -->
+	<mappers>
+		<mapper resource="com/mapper/UsersMapper.xml" />
+		<mapper resource="com/mapper/NewsMapper.xml" />
+		<mapper resource="com/mapper/FtypeMapper.xml" />
+		<mapper resource="com/mapper/GoodsMapper.xml" />
+		<mapper resource="com/mapper/OrdersMapper.xml" />
+		<mapper resource="com/mapper/FshopMapper.xml" />
+		<mapper resource="com/mapper/KeepMapper.xml" />
+		<mapper resource="com/mapper/BbsMapper.xml" />
+
+	</mappers>
+
+</configuration>
